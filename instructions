@@ -1,0 +1,9 @@
+ https://github.com/vikas4cloud/python-mini-projects
+https://github.com/DevSecOpsG/boto3/tree/main
+
+
+import boto3
+
+s3 = boto3.resource('s3')
+
+s3.meta.client.upload_file(r"C:\Users\cloud\Desktop\batchcode's\boto3\hello.txt" , 'elasticbeanstalk-us-east-1-878088820643', 'hello.txt')
